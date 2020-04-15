@@ -1,85 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>My Site</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="full-page-scroll.css">
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container-fluid"><a class="navbar-brand" href="#">Chad Banfield</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">About Me</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">My Projects</a></li>
-                    <li class="nav-item d-xl-flex" role="presentation"><a class="nav-link" href="#">Contact Me</a></li>
-                    <li class="nav-item d-xl-flex" role="presentation"><a class="nav-link" href="onpapersports.html">On Paper Sports</a></li>
-                </ul>
-            </div>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <ul class="sidenav sidenav-fixed emu-green z-depth-0 hide-on-med-and-down">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/emu_logo.png" width="35" style="padding: 7px;" />
+          </div>
+          <a href="#user"><img class="circle" src="assets/me.jpg" /></a>
+          <a href="#name"
+            ><span class="grey-text text-lighten-3 name">Chad Banfield</span></a
+          >
+          <!-- <a href="#email"
+            ><span class="grey-text text-lighten-3 email"
+              >cbanfiel@emich.edu</span
+            ></a
+          > -->
         </div>
-    </nav>
-    <section class="d-xl-flex justify-content-xl-center align-items-xl-center">
-        <div class="jumbotron jumbotron-fluid text-center" style="margin-top: 36px;">
-            <h1>Come check out some of my projects!</h1>
-            <p>I have projects written using amazing tools such as Java, JavaFX, HTML, CSS, Javscript, React, React Native and more!</p>
-            <p><a class="btn btn-light text-dark" role="button" href="">My Projects</a></p>
+      </li>
+      <li>
+        <a href="https://github.com/cbanfiel" class="grey-text text-lighten-3">
+          <i class="icon-github white-text icon"></i>GitHub</a
+        >
+      </li>
+      <!-- <li><a href="#!" class="grey-text text-lighten-3">Second Link</a></li> -->
+      <li>
+          <div class="divider"></div>
+      </li>
+      <li><a class="subheader grey-text text-lighten-3">Shortcuts</a></li>
+
+      <li><a class="grey-text text-lighten-3" href="#0">Home</a></li>
+      <li>
+        <a class="grey-text text-lighten-3" href="#1"
+          >My Projects Intro</a
+        >
+      </li>
+      <li>
+        <a class="grey-text text-lighten-3" href="#2"
+          >On Paper Sports Series</a
+        >
+      </li>
+      <li>
+        <a class="grey-text text-lighten-3" href="#3"
+          >Make Me A Drink</a
+        >
+      </li>
+      <li>
+        <a class="grey-text text-lighten-3" href="#4"
+          >COVID-19 Michigan</a
+        >
+      </li>
+      <li>
+        <a class="grey-text text-lighten-3" href="#5">AOLI Website</a>
+      </li>
+      <li>
+        <a class="grey-text text-lighten-3" href="#6"
+          >Java College Football GM Game</a
+        >
+      </li>
+    </ul>
+
+  <nav class="nav-wrapper emu-green z-depth-0 navbar-fixed">
+  <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+    <i class="material-icons">menu</i>
+</a>
+
+</nav>
+  <ul class="sidenav emu-green z-depth-0" id="mobile-menu">
+    <li>
+      <div class="user-view">
+        <a href="#name"
+          ><span class="grey-text text-lighten-3 name">Chad Banfield</span></a
+        >
+        <!-- <a href="#email"
+          ><span class="grey-text text-lighten-3 email"
+            >cbanfiel@emich.edu</span
+          ></a
+        > -->
+      </div>
+    </li>
+    <li>
+      <a href="https://github.com/cbanfiel" class="grey-text text-lighten-3">
+        <i class="icon-github white-text icon"></i>GitHub</a
+      >
+    </li>
+    <!-- <li><a href="#!" class="grey-text text-lighten-3">Second Link</a></li> -->
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="subheader grey-text text-lighten-3">Shortcuts</a></li>
+  
+    <li><a class="grey-text text-lighten-3" href="#0">Home</a></li>
+    <li>
+      <a class="grey-text text-lighten-3" href="#1"
+        >My Projects Intro</a
+      >
+    </li>
+    <li>
+      <a class="grey-text text-lighten-3" href="#2"
+        >On Paper Sports Series</a
+      >
+    </li>
+    <li>
+      <a class="grey-text text-lighten-3" href="#3"
+        >Make Me A Drink</a
+      >
+    </li>
+    <li>
+      <a class="grey-text text-lighten-3" href="#4"
+        >COVID-19 Michigan</a
+      >
+    </li>
+    <li>
+      <a class="grey-text text-lighten-3" href="#5">AOLI Website</a>
+    </li>
+    <li>
+      <a class="grey-text text-lighten-3" href="#6"
+        >Java College Football GM Game</a
+      >
+    </li>
+  </ul>
+
+    <!-- BODY -->
+
+    <main class="grey lighten-4 scroll-container" id="main">
+      <section class="page scrollspy grey lighten-4 section1" id="home">
+        <div class="container page_content">
+          <h1>Welcome</h1>
+          <p>
+            Hey, I'm Chad, a 23 year old developer. I graduated from Eastern
+            Michigan University with Bachelors in Computer Science in the spring
+            of 2020. I love coding and working on side-projects in my free time.
+          </p>
+          <p>Lets get in touch! my email address is in the sidenav!</p>
         </div>
-    </section>
-    <div class="d-xl-flex justify-content-xl-center">
-        <div class="card text-center">
-            <div class="card-body">
-                <h4 class="card-title">College Football Management Game</h4>
-                <h6 class="text-muted card-subtitle mb-2">Written in Java &amp; JavaFX</h6>
-                <p class="card-text">This was probably &nbsp;my first big project. I starting creating it while working my way through learing Java and JavaFX</p><a class="btn btn-light text-dark" role="button" href="">Let's see it!</a></div>
+      </section>
+      <section class="page scrollspy grey lighten-2 section2" id="myprojects">
+        <div class="container page_content">
+          <h1>My Projects</h1>
+          <p>Come check out some of my projects!</p>
+
+          <ul>
+            <li><a href="#2">On Paper Sports</a></li>
+            <li><a href="#3">Make Me A Drink</a></li>
+            <li>
+              <a href="#4"
+                >COVID-19 Michigan Predictions (School Project)</a
+              >
+            </li>
+            <li><a href="#5">AOLI LLC. Website</a></li>
+            <li>
+              <a href="#6">Java College Football Game</a>
+            </li>
+          </ul>
         </div>
-        <div class="card text-center">
-            <div class="card-body">
-                <h4 class="card-title">Pro basketball Management Game</h4>
-                <h6 class="text-muted card-subtitle mb-2">Written in Javascript/React Native</h6>
-                <p class="card-text">This project was written while learning React and React Native</p><a class="btn btn-light text-dark" role="button" href="">Let's see it!</a></div>
+      </section>
+      <section class="page scrollspy grey lighten-4 section3" id="onpapersports">
+        <div class="container page_content">
+          <h1>On Paper Sports Series</h1>
+          <p>Languages/Frameworks: JavaScript/React Native</p>
+          <p>
+            On Paper Sports is a GM Game written in React Native, the series has
+            received hundereds of downloads on the Google Play Store and Apple
+            App Store. This is by far the largest project I have built.
+          </p>
+          <p>
+            The series is 3 separate games simulating different sports. On Paper
+            Sports Basketball '20, On Paper Sports Football '20 and On Paper
+            Sports Hockey '20
+          </p>
+          <p>
+            The games allow a user to control a team and simulate various
+            seasons with that team. It gives you complete control of the team,
+            including trading, free agency, off-season, draft and various other
+            abilities to build your team. There is also a college mode in which
+            a user will have to recruit players to join there team.
+          </p>
+          <p>
+            The game also allows for custom rosters to be loaded in. I love
+            making rosters for the game as a hobby and have also written a web
+            scraper for the app written in Node.JS that scrapes the web for
+            player information and stats and converts that information into
+            usable ratings for the game.
+          </p>
         </div>
-    </div>
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+      </section>
+      <section class="page scrollspy grey lighten-2" id="makemeadrink">
+        <div class="container page_content">
+          <h1>Make Me A Drink App</h1>
+          <p>Languages/Frameworks: JavaScript/React Native</p>
+          <p>
+            After building out such a logic intensive game as the On Paper
+            Sports series I wanted to create something very simplistic. The Make
+            Me A Drink app uses an online cocktail database's API for recipes
+            and images. The app provides the user with a very simplistic and
+            beautiful design
+          </p>
+          <p>
+            A drink is randomly shown to the user on a card, that can be flipped
+            over to see the recipe for the said drink. The user can also
+            favorite a drink and view a favorites list. When a new drink is
+            grabbed the current card slides to the left of the screen and a new
+            card slides in from the right
+          </p>
+        </div>
+      </section>
+      <section class="page scrollspy grey lighten-4" id="covid19michigan">
+        <div class="container page_content">
+          <h1>COVID-19 Michigan Predictions</h1>
+          <p>Languages/Frameworks: Python/Flask and HTML/CSS</p>
+          <p>
+            This web application was written using Flask which is a web
+            framework for python. For a group project in class my group
+            collected case and death information daily on COVID-19. This data
+            was grabbed via a web scraper and saved to a SQL database. My job
+            was to use this data in a meaningful way
+          </p>
+          <p>
+            I decided it would be neat to predict the spread of COVID-19. The
+            data was collected county by county so I figured it would be neat to
+            predict the growth unique to each county. The application takes in
+            this specific data and using simple mathematical formulas comes up
+            with a growth curve.
+          </p>
+          <p>
+            The app takes into account the predicted length of the first wave of
+            COVID-19 as well as the predicted peak day of new cases. These
+            numbers can be changed by a user on the web app.
+          </p>
+          <p>
+            The web app was then built to display these numbers in a meaningful
+            way using HTML tables and Chart.JS
+          </p>
+          <p>
+            You can check out this project on heroku:
+            <a href="https://covid19michiganpredictions.herokuapp.com"
+              >COVID-19 Michigan Predictions</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="page scrollspy grey lighten-2" id="aoliwebsite">
+        <div class="container page_content">
+          <h1>AOLI Website</h1>
+          <p>Languages/Frameworks: HTML/CSS and PHP/MySQL</p>
+
+          <p>
+            For my independent study at Eastern Michigan. I was tasked with
+            making a website for a company that wanted to deliver a streaming
+            application for there video training series.
+          </p>
+          <p>
+            I did the entire full-stack for the website. Which included setting
+            up the database and working with it in PHP. Also setting up and
+            using a payment API so that users could buy individual training
+            videos.
+          </p>
+        </div>
+      </section>
+      <section class="page scrollspy grey lighten-4" id="javacollegefootball">
+        <div class="container page_content">
+          <h1>Java College Football Game</h1>
+          <p>
+            This was my very first project that I worked on. It is what inspired
+            the On Paper Sports Series. Using Java and JavaFX as the UI. I built
+            out a full college football GM game much like what On Paper Sports
+            Football '20 is. This was the first project that really made me
+            enjoy coding.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- <footer class="page scrollspy-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact</h5>
+                    <ul>
+                        <li>Phone: 734.453.1660</li>
+
+                    </ul>
                 </div>
-                <p class="copyright">Company Name © 2017</p>
-            </div>
-        </footer>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Hours</h5>
+                    <ul>
+                        <li>Monday - Friday: 9am-5pm
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer> -->
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="full-page-scroll.js"></script>
+    <script type="text/javascript">
+      new fullScroll({
+        mainElement: 'main',
+        displayDots: true,
+        dotsPosition: 'right',
+        animateTime: 0.7,
+        animateFunction: 'ease'
+      });
+    </script>
+    <script>
+      M.AutoInit();
+    </script>
+  </body>
 </html>

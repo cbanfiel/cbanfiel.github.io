@@ -1,0 +1,42 @@
+
+            <h3 class="center">Hello World</h3>
+            <div class="row">
+                <div class="col s12 l6">
+                    <p>Hello, I am a 23 year old Computer Science Major graduated from Eastern Michigan University.</p>
+                    <p>Throughout my time coding I have worked with various languages and frameworks. I have written projects in Java, Python, C#, JavaScript, HTML/CSS and various different frameworks. I enjoy coding and love working on side projects in my free time </p>
+                </div>
+                <div class="col s12 l6">
+                    <h5>Some of my projects...</h5>
+                    <p>My first big project I worked on was a college football management game written in Java and JavaFX. It was a ui based simulation game with hundereds of teams, you could simulate an infinite number of games and seasons, each game was simulated play
+                        by play. This was built while I was learning Java.</p>
+                    <p>This idea brought me to my next project. Similar to the previous it was a basketball based simulation game, written in React Native for a cross platform mobile experience. This was much more refined then my first project and actually
+                        expanded into 3 separate apps simulating basketball, football and hockey these apps have recieved hundereds of downloads on the app store and google play stores</p>
+                    <p>Though I think the app was very impressive by itself, making rosters for the app was also a fun hobby for me. But as a coder I knew I didn't want to just sit there plugging in various player info and ratings into excel for the game. I created
+                        a converter that uses real life information and statistics, when the application runs it scrapes this data from the web, converts the data into usable information and ratings for the game and exports a pretty JSON file which can
+                        be directly imported to the game. This converter originally was written in Python but eventually I made a better version in JavaScript using Node.JS</p>
+                    <p>For my independent study at EMU I worked with a professor who was in need of a web developer to build a video training website.
+                        I was able to build out the front end and back end of the website using technologies such as HTML, CSS, Javascript, PHP and mySQL. For the design of the website I used Google's Materialize CSS which gave the design a much cleaner
+                        look and saved me a lot of time. The website construction is on going but I will provide a link here when finished </p>
+                    <p>For a class project I created a project that can predict the spread of COVID-19 in the state of Michigan county by county, I wrote the backend in python/flask you can find it <a href="https://covid19michiganpredictions.herokuapp.com/">here</a></p>
+                    <p>Make me a drink app: This app was created using React Native and is available on Google Play and Apple App stores. I wanted to create a simplistic styled app. This app connects to theCocktailDB's api for 
+                        
+                    </p>
+                </div>
+
+
+
+
+            
+                        </div>
+                        <h5>some of the languages/frameworks Ive used</h5>
+                        <i class="icon devicon-android-plain"></i>
+                        <i class="icon devicon-csharp-plain"></i>
+                        <i class="icon devicon-css3-plain"></i>
+                        <i class="icon devicon-html5-plain"></i>
+                        <i class="icon devicon-javascript-plain"></i>
+                        <i class="icon devicon-php-plain"></i>
+                        <i class="icon devicon-python-plain"></i>
+                        <i class="icon devicon-react-original"></i>
+                        <i class="icon devicon-java-plain"></i>
+            
+                    </div>
