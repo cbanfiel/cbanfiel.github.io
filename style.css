@@ -17,18 +17,8 @@ p{
     align-items: center;
 }
 
-.navigationbuttons{
-    position: relative;
-    top: 20px;
-    width: 100%;
-    padding-left: 300px;
-    padding-right: 300px;
-    font-size: larger;
-}
-
 main{
     flex: 1 0 auto;
-
 }
 
 .emu-green {
@@ -40,8 +30,14 @@ main{
 }
 
 .page{
-    padding-left: 9vw;
+    padding-left: 0px;
     padding-top: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .scroll-container{
+        padding-left: 200px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -61,9 +57,14 @@ main{
         margin-bottom: 5px;
         line-height: 23px;
     }
-    
+
+    .scroll-container{
+        padding-left: 0px;
+    }
 
 }
+
+
 
 .page_content{
     height: 80vh;
@@ -85,3 +86,4 @@ main{
 .dots li a.active:before {
     background-color: #006A35;
 }
+
