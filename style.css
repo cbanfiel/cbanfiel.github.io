@@ -40,7 +40,7 @@ main{
 }
 
 .page{
-    padding-left: 100px;
+    padding-left: 9vw;
     padding-top: 10px;
 }
 
@@ -76,4 +76,12 @@ main{
 .divider{
     margin-left: 30px !important;
     margin-right: 30px !important;
+}
+
+.dots li a:before {
+	background: rgba(0, 0, 0, 0.48);
+}
+
+.dots li a.active:before {
+    background-color: #006A35;
 }
