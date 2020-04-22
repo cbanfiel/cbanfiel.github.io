@@ -110,6 +110,19 @@ main{
     color: #006A35 !important;
 }
 
+.screenshot{
+    height: 300px;
+}
+
+.materialboxed{
+    margin-top: 20px !important;
+}
+
+.center .materialboxed,
+.center-align .materialboxed {
+    margin: 0 auto; position: relative !important;
+}
+
 
 /* label underline focus color */
 .row .input-field input:focus {
