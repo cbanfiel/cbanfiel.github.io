@@ -65,7 +65,6 @@ main{
 }
 
 
-
 .page_content{
     height: 80vh;
 }
@@ -86,4 +85,75 @@ main{
 .dots li a.active:before {
     background-color: #006A35;
 }
+
+
+@keyframes slidein {
+    from {
+      margin-bottom: 300%;
+      height: 300%; 
+    }
+  
+    to {
+      margin-bottom: 0%;
+      width: 100%;
+    }
+  }
+
+  /* label focus color */
+.input-field input:focus+label {
+    color: #006A35 !important;
+}
+
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #006A35 !important;
+}
+
+
+/* label underline focus color */
+.row .input-field input:focus {
+    border-bottom: 1px solid #006A35 !important;
+    box-shadow: 0 1px 0 0 #006A35 !important
+}
+
+.row .input-field textarea:focus {
+    border-bottom: 1px solid #006A35 !important;
+    box-shadow: 0 1px 0 0 #006A35 !important
+}
+.input-field textarea:focus+label {
+    color: #006A35 !important;
+}
+
+  /* @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    to {
+      -webkit-transform: translate3d(0, 12.2rem, 0);
+      transform: translate3d(0, 12.2rem, 0);
+    }
+  } */
+  /* @keyframes bounce {
+    0% {
+      transform: translateY(-200px) rotate(0deg);
+    }
+    to {
+        transform: translateY(0) rotate(20deg);
+    }
+  }
+
+ .basketball{
+        margin-left: 300px;
+        -webkit-animation: bounce 0.7s;
+        animation: bounce 0.7s;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        pointer-events: none;
+ } */
 
